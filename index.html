@@ -8,7 +8,7 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <link rel="icon" href="./images/devchallenges.png" />
 
     <link
       rel="shortcut icon"
@@ -20,76 +20,111 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Devchallenges</title>
+    <title>Checkout page</title>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <h1>Checkout</h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3>Contact information</h3>
+          <form>
+            <p>E-mail</p>
+            <div class="input">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Enter your email...">
+            </div>
+            <p>Phone</p>
+            <div class="input">
+              <i class="fas fa-phone-alt"></i>
+              <input type="text" placeholder="Enter your phone...">
+            </div>
+          </form>
+        </div>
+        <div class="shipping-address">
+          <h3>Shipping address</h3>
+          <form>
+            <p>Full name</p>
+            <div class="input">
+              <i class="fas fa-user-circle" ></i>
+              <input type="text" placeholder="Rodney Cotton">
+            </div>
+            <p>Address</p>
+            <div class="input">
+              <i class="fas fa-home"></i>
+              <input type="text" placeholder="Your address...">
+            </div>
+            <p>City</p>
+            <div class="input">
+              <i class="fas fa-city"></i>
+              <input type="text" placeholder="Your city...">
+            </div>
+            
+            <div class="country-postal">
+              <div>
+              <p>Country</p>
+              <div class="input-medium">
+                <i class="fas fa-globe-americas"></i>
+                <input type="text" placeholder="Your country...">
+              </div>
+            </div>
+            <div>
+              <p>Postal code</p>
+              <div class="input-medium">
+                <i class="fas fa-inbox" ></i>
+                <input type="text" placeholder="Your postal code...">
+              </div>
+            </div>
+            </div>
+    
+            <div class="checkbox">
+              <input type="checkbox">
+              <p>Save this information for next time</p>
+            </div>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="items">
+        <div class="item1">
+          <img src="./images/photo1.png" alt="Vintage backbag">
+            <h4>Vintage Backbag</h4>
+            <p class="price">$54,99<span>$94,99</span></p>
+            <div class="amount">
+              <p class="less">-</p>
+              <p>1</p>
+              <p class="plus">+</p>
+            </div>
+        </div>
+        <div class="item2">
+          <img src="./images/photo2.png" alt="Levi Shoes">
+          <h4>Levi Shoes</h4>
+          <p class="price">$74,99<span>$124,99</span></p>
+          <div class="amount">
+            <p class="less">-</p>
+            <p>1</p>
+            <p class="plus">+</p>
+          </div>
+        </div>
+        <div class="shipping">
+          <h3>Shipping</h3>
+          <p>$19</p>
+        </div>
+        <div class="total">
+          <h3>Total</h3>
+          <p>$148,98</p>
+        </div>
+      </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/b90b2618b5.js" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+:root {
+  --h1: #4E5150;
+  --subtitle: #333333;
+  --label: #4F4F4F;
+  --placeholder: #828282;
+  --button: #F2994A;
+  --background: #F2F2F2;
+  --plus: #E0E0E0;
+  --lines: #BDBDBD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  margin-left: 18.5%;
+  font-size: 36px;
+  color: var(--h1);
+  margin-top: 64px;
+}
+
+.container {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .contact-info h3, .form .shipping-address h3 {
+  font-size: 18px;
+  color: var(--subtitle);
+  padding: 50px 0 14px 0;
+}
+
+.form .contact-info form, .form .shipping-address form {
+  color: var(--label);
+}
+
+.form .contact-info form p, .form .shipping-address form p {
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+.form .contact-info form .input, .form .shipping-address form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--placeholder);
+  border-radius: 12px;
+  padding: 18px 0 18px 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 400px;
+  margin-bottom: 15px;
+}
+
+.form .contact-info form .input input, .form .shipping-address form .input input {
+  border: none;
+}
+
+.form .contact-info form .input i, .form .shipping-address form .input i {
+  padding-right: 5px;
+}
+
+.form .contact-info form .country-postal, .form .shipping-address form .country-postal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .contact-info form .input-medium, .form .shipping-address form .input-medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--placeholder);
+  border-radius: 12px;
+  padding: 18px 0 18px 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 170px;
+  margin-right: 48px;
+}
+
+.form .contact-info form .input-medium input, .form .shipping-address form .input-medium input {
+  border: none;
+}
+
+.form .contact-info form .input-medium i, .form .shipping-address form .input-medium i {
+  padding-right: 5px;
+}
+
+.form .contact-info form .checkbox, .form .shipping-address form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+.form .contact-info form .checkbox p, .form .shipping-address form .checkbox p {
+  margin-left: 10px;
+}
+
+.form .contact-info form button, .form .shipping-address form button {
+  background: var(--button);
+  color: white;
+  width: 166px;
+  padding: 17px 0;
+  border: none;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.items {
+  width: 383px;
+  height: 535px;
+  background: var(--background);
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+.items img {
+  width: 134.21px;
+  height: 136.27px;
+  border-radius: 13px;
+  margin: 33px 0 31px 29px;
+}
+
+.items .item1, .items .item2 {
+  height: 200px;
+  overflow-y: hidden;
+}
+
+.items .item1 h4, .items .item2 h4 {
+  margin-left: 190px;
+  margin-top: -170px;
+  color: var(--h1);
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.items .item1 .price, .items .item2 .price {
+  margin-left: 190px;
+  color: var(--button);
+}
+
+.items .item1 .price span, .items .item2 .price span {
+  text-decoration: line-through;
+  color: var(--h1);
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.items .item1 .amount, .items .item2 .amount {
+  color: var(--subtitle);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 190px;
+  border: 1px solid var(--placeholder);
+  border-radius: 12px;
+  width: 80px;
+  height: 40px;
+  margin-top: 40px;
+  padding: 0 10px 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.items .item1 .amount .less, .items .item2 .amount .less {
+  background-color: #E0E0E0;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.items .item1 .amount .plus, .items .item2 .amount .plus {
+  background: #E0E0E0;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+.items .shipping, .items .total {
+  color: #333333;
+  border-top: 1px solid var(--placeholder);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  width: 320px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.items .shipping h3, .items .total h3 {
+  font-size: 18px;
+}
+
+.items .shipping p, .items .total p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles.css.map */
