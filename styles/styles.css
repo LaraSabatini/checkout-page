@@ -37,6 +37,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -222,5 +226,87 @@ h1 {
 
 .items .shipping p, .items .total p {
   font-size: 14px;
+}
+
+footer {
+  color: #BDBDBD;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+    margin: 32px 0 0 18px;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .items {
+    overflow-y: hidden;
+    width: 350px;
+    height: 489px;
+    margin-left: 5px;
+  }
+  .container .items img {
+    width: 122.75px;
+    height: 124.64px;
+    margin: 30px 0 28px 26px;
+  }
+  .container .items .item1, .container .items .item2 {
+    height: 180px;
+  }
+  .container .items .item1 h4, .container .items .item2 h4 {
+    font-size: 12px;
+    margin-top: -150px;
+  }
+  .container .items .item1 .price, .container .items .item2 .price {
+    font-size: 14px;
+  }
+  .container .items .item1 .price span, .container .items .item2 .price span {
+    font-size: 10px;
+  }
+  .container .items .item1 .amount, .container .items .item2 .amount {
+    width: 78px;
+    height: 37px;
+    margin-top: 37px;
+  }
+  .container .items .shipping, .container .items .total {
+    width: 299px;
+    margin-left: 25px;
+  }
+  .container .items .shipping h3, .container .items .total h3 {
+    font-size: 14px;
+  }
+  .container .form .contact-info, .container .form .shipping-address {
+    margin-left: 13px;
+  }
+  .container .form .contact-info h3, .container .form .shipping-address h3 {
+    font-size: 14px;
+  }
+  .container .form .contact-info form p, .container .form .shipping-address form p {
+    font-size: 10px;
+  }
+  .container .form .contact-info form .input, .container .form .shipping-address form .input {
+    width: 320px;
+  }
+  .container .form .contact-info form .input input, .container .form .shipping-address form .input input {
+    font-size: 12px;
+  }
+  .container .form .contact-info form .input-medium, .container .form .shipping-address form .input-medium {
+    width: 150px;
+    margin-right: 10px;
+  }
+  .container .form .contact-info form .input-medium input, .container .form .shipping-address form .input-medium input {
+    font-size: 12px;
+  }
+  .container .form .contact-info button, .container .form .shipping-address button {
+    margin-left: 170px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

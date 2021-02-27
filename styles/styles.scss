@@ -34,12 +34,12 @@ h1 {
     margin: 0 auto;
     justify-content: center;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 
 .form {
     .contact-info, .shipping-address {
-        
 
         h3 {
             font-size: 18px;
@@ -196,6 +196,107 @@ h1 {
 
         p {
             font-size: 14px;
+        }
+    }
+}
+
+footer {
+    color: #BDBDBD;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 24px;
+        margin: 32px 0 0 18px;
+    }
+
+    .container {
+        flex-direction: column;
+
+        .items {
+            overflow-y: hidden;
+            width: 350px;
+            height: 489px;
+            margin-left: 5px;
+
+            img {
+                width: 122.75px;
+                height: 124.64px;
+                margin: 30px 0 28px 26px;
+            }
+
+            .item1, .item2 {
+                height: 180px;
+
+                h4 {
+                    font-size: 12px;
+                    margin-top: -150px;
+                }
+
+                .price {
+                    font-size: 14px;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+                .amount {
+                    width: 78px;
+                    height: 37px;
+                    margin-top: 37px;
+                }
+            }
+
+            .shipping, .total {
+                width: 299px;
+                margin-left: 25px;
+
+                h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .form {
+            .contact-info, .shipping-address {
+                margin-left: 13px;
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                form {
+                    p {
+                        font-size: 10px;
+                    }
+
+                    .input {
+                        width: 320px;
+                        
+                        input {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .input-medium {
+                        width: 150px;
+                        margin-right: 10px;
+
+                        input {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                button {
+                    margin-left: 170px;
+                }
+            }
         }
     }
 }
